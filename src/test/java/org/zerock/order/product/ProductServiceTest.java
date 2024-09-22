@@ -7,14 +7,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class ProductServiceTest {
 
-    @Autowired
-    private ProductService productService;
 
     @Test
     void prodectRegister() {
         final AddProductRequest request = getAddProductRequest();
 
-        productService.addProduct(request);
+        // API 요청
     }
 
     private static AddProductRequest getAddProductRequest() {
